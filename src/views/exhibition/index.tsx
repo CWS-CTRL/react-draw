@@ -11,8 +11,6 @@ interface propsType {
 const Exhibitions = (props: propsType) => {
     const { iconsInfo } = props;
     const [iconDetailInfo,setIconDetailInfo]=useState<null|iconInfoType>(null)
-console.log(123);
-
     return <div>
         <div className="w-3/5 mx-auto grid grid-cols-2 gap-4 sm:w-1/2 sm:grid-cols-4">{
         iconsInfo.map(({ key, path }) =>

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import {CopyToClipboard } from "react-copy-to-clipboard";
-import  hljs from "highlight.js"
+import hljs from "highlight.js";
+
+import codeLoading from "../../svg/loading/19.svg";
 
 import type { iconInfoType } from "../../../utils/svgImportControls";
 
@@ -11,11 +13,12 @@ interface propsType {
 
 const Magnify = (props: propsType) => {
     const { iconDetailInfo: { key, path },setData } = props;
-    const [code, setCode] = useState<null | string>(null);
+    const [code, setCode] = useState<null | string>(null);    
     useEffect(() => { 
-        fetch(path).then(data => data.text()).then((res) => { setCode(res); hljs.highlightAll()});
-    })
-
+        fetch(path).then(data => data.text()).then((res) => {
+            setCode(res); hljs.highlightAll()
+        });
+    },[code])
     return <div className="fixed inset-0  bg-slate-700 bg-opacity-20 z-50" onClick={({ target,currentTarget}) => target===currentTarget&&setData(null)}>
         <div className="w-3/4 h-5/6 mx-auto mt-5 p-5 grid sm:grid-cos-2 md:grid-cols-2 bg-black border rounded-2xl">
             <div className="mt-4">
@@ -31,9 +34,13 @@ const Magnify = (props: propsType) => {
                         </CopyToClipboard></div>
                 </div>
                 <div className="h-5/6 overflow-auto">
-                <pre>
-                    <code className="language-html">{ code }</code>
-                </pre>
+                    {code ?
+                         <pre>
+                         <code className="language-html">{code}</code>
+                        </pre>:
+                        <img src={codeLoading} alt="codeloading..." /> 
+                       
+                    }
                </div>
             </div>
         </div>
