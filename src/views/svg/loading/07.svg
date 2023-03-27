@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="25 25 50 50">
+    <g id="l" fill="#fff" stroke="#fff">
+        <circle id="c1" transform="rotate(0 50 50) translate(0 -15)" cx="50" cy="50" r="2" opacity="1" />
+        <circle id="c2" transform="rotate(22.5 50 50) translate(0 -15)" cx="50" cy="50" r="2" opacity="0.93" />
+        <circle id="c3" transform="rotate(45 50 50) translate(0 -15)" cx="50" cy="50" r="2" opacity="0.86" />
+        <circle id="c4" transform="rotate(67.5 50 50) translate(0 -15)" cx="50" cy="50" r="2" opacity="0.79" />
+        <circle id="c5" transform="rotate(90 50 50) translate(0 -15)" cx="50" cy="50" r="2" opacity="0.72" />
+        <circle id="c6" transform="rotate(112.5 50 50) translate(0 -15)" cx="50" cy="50" r="2" opacity="0.65" />
+        <circle id="c7" transform="rotate(135 50 50) translate(0 -15)" cx="50" cy="50" r="2" opacity="0.58" />
+        <circle id="c8" transform="rotate(157.5 50 50) translate(0 -15)" cx="50" cy="50" r="2" opacity="0.51" />
+        <circle id="c9" transform="rotate(180 50 50) translate(0 -15)" cx="50" cy="50" r="2" opacity="0.44" />
+        <circle id="c10" transform="rotate(202.5 50 50) translate(0 -15)" cx="50" cy="50" r="2" opacity="0.37" />
+        <circle ic="c11" transform="rotate(225 50 50) translate(0 -15)" cx="50" cy="50" r="2" opacity="0.30" />
+        <circle id="c12" transform="rotate(247.5 50 50) translate(0 -15)" cx="50" cy="50" r="2" opacity="0.23" />
+        <circle id="c13" transform="rotate(270 50 50) translate(0 -15)" cx="50" cy="50" r="2" opacity="0.16" />
+        <circle id="c14" transform="rotate(292.5 50 50) translate(0 -15)" cx="50" cy="50" r="2" opacity="0.09" />
+        <circle id="c15" transform="rotate(315 50 50) translate(0 -15)" cx="50" cy="50" r="2" opacity="0.02" />
+        <circle id="c16" transform="rotate(337.5 50 50) translate(0 -15)" cx="50" cy="50" r="2" opacity="0" />
+        <animate href="#c1" attributeType="XML" attributeName="opacity" values="0;1;0" dur="0.75"
+            repeatCount="indefinite" />
+        <animate href="#c2" attributeType="XML" attributeName="opacity" values="0;1;0" dur="0.75" begin="0.05"
+            repeatCount="indefinite" />
+        <animate href="#c3" attributeType="XML" attributeName="opacity" values="0;1;0" dur="0.75" begin="0.1"
+            repeatCount="indefinite" />
+        <animate href="#c4" attributeType="XML" attributeName="opacity" values="0;1;0" dur="0.75" begin="0.15"
+            repeatCount="indefinite" />
+        <animate href="#c5" attributeType="XML" attributeName="opacity" values="0;1;0" dur="0.75" begin="0.2"
+            repeatCount="indefinite" />
+        <animate href="#c6" attributeType="XML" attributeName="opacity" values="0;1;0" dur="0.75" begin="0.25"
+            repeatCount="indefinite" />
+        <animate href="#c7" attributeType="XML" attributeName="opacity" values="0;1;0" dur="0.75" begin="0.3"
+            repeatCount="indefinite" />
+        <animate href="#c8" attributeType="XML" attributeName="opacity" values="0;1;0" dur="0.75" begin="0.35"
+            repeatCount="indefinite" />
+        <animate href="#c9" attributeType="XML" attributeName="opacity" values="0;1;0" dur="0.75" begin="0.4"
+            repeatCount="indefinite" />
+        <animate href="#c10" attributeType="XML" attributeName="opacity" values="0;1;0" dur="0.75" begin="0.45"
+            repeatCount="indefinite" />
+        <animate href="#c11" attributeType="XML" attributeName="opacity" values="0;1;0" dur="0.75" begin="0.5"
+            repeatCount="indefinite" />
+        <animate href="#c12" attributeType="XML" attributeName="opacity" values="0;1;0" dur="0.75" begin="0.55"
+            repeatCount="indefinite" />
+        <animate href="#c13" attributeType="XML" attributeName="opacity" values="0;1;0" dur="0.75" begin="0.6"
+            repeatCount="indefinite" />
+        <animate href="#c14" attributeType="XML" attributeName="opacity" values="0;1;0" dur="0.75" begin="0.65"
+            repeatCount="indefinite" />
+        <animate href="#c15" attributeType="XML" attributeName="opacity" values="0;1;0" dur="0.75" begin="0.7"
+            repeatCount="indefinite" />
+        <animate href="#c16" attributeType="XML" attributeName="opacity" values="0;1;0" dur="0.75" begin="0.75"
+            repeatCount="indefinite" />
+    </g>
+</svg>

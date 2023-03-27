@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="35 35 30 30">
+    <g id="l" fill="none" stroke="#fff">
+        <path id="p1" d="M 54.33 47.5,a 5 5 0 0 1 0 5" fill="" stroke="" stroke-width="" />
+        <path id="p2" d="M 56.06 46.5,a 7 7 0 0 1 0 7" fill="" stroke="" stroke-width="" />
+        <path id="p3" d="M 57.8 45.5,a 9 9 0 0 1 0 9" fill="" stroke="" stroke-width="" />
+        <path id="p4" d="M 59.53 44.5,a 11 11 0 0 1 0 11" fill="" stroke="" stroke-width="" />
+        <path id="p5" d="M 61.26 43.5,a 13 13 0 0 1 0 13" fill="" stroke="" stroke-width="" />
+        <path id="p6" d="M 45.67 47.5,a 5 5 0 0 0 0 5" fill="" stroke="" stroke-width="" />
+        <path id="p7" d="M 43.94 46.5,a 7 7 0 0 0 0 7" fill="" stroke="" stroke-width="" />
+        <path id="p8" d="M 42.2 45.5,a 9 9 0 0 0 0 9" fill="" stroke="" stroke-width="" />
+        <path id="p9" d="M 40.47 44.5,a 11 11 0 0 0 0 11" fill="" stroke="" stroke-width="" />
+        <path id="p10" d="M 38.74 43.5,a 13 13 0 0 0 0 13" fill="" stroke="" stroke-width="" />
+        <animateTransform href="#p1" attributeName="transform" attributeType="XML" type="rotate"
+            values="0 50 50;0 50 50;-180 50 50;-180 50 50;0 50 50" keyTimes="0;0.1;0.5;0.6;1" dur="1.7"
+            repeatCount="indefinite" />
+        <animateTransform href="#p2" attributeName="transform" attributeType="XML" type="rotate"
+            values="0 50 50;0 50 50;-180 50 50;-180 50 50;0 50 50" keyTimes="0;0.1;0.5;0.6;1" dur="1.7" begin="0.08"
+            repeatCount="indefinite" />
+        <animateTransform href="#p3" attributeName="transform" attributeType="XML" type="rotate"
+            values="0 50 50;0 50 50;-180 50 50;-180 50 50;0 50 50" keyTimes="0;0.1;0.5;0.6;1" dur="1.7" begin="0.16"
+            repeatCount="indefinite" />
+        <animateTransform href="#p4" attributeName="transform" attributeType="XML" type="rotate"
+            values="0 50 50;0 50 50;-180 50 50;-180 50 50;0 50 50" keyTimes="0;0.1;0.5;0.6;1" dur="1.7" begin="0.24"
+            repeatCount="indefinite" />
+        <animateTransform href="#p5" attributeName="transform" attributeType="XML" type="rotate"
+            values="0 50 50;0 50 50;-180 50 50;-180 50 50;0 50 50" keyTimes="0;0.1;0.5;0.6;1" dur="1.7" begin="0.32"
+            repeatCount="indefinite" />
+        <animateTransform href="#p6" attributeName="transform" attributeType="XML" type="rotate"
+            values="0 50 50;0 50 50;-180 50 50;-180 50 50;0 50 50" keyTimes="0;0.1;0.5;0.6;1" dur="1.7"
+            repeatCount="indefinite" />
+        <animateTransform href="#p7" attributeName="transform" attributeType="XML" type="rotate"
+            values="0 50 50;0 50 50;-180 50 50;-180 50 50;0 50 50" keyTimes="0;0.1;0.5;0.6;1" dur="1.7" begin="0.08"
+            repeatCount="indefinite" />
+        <animateTransform href="#p8" attributeName="transform" attributeType="XML" type="rotate"
+            values="0 50 50;0 50 50;-180 50 50;-180 50 50;0 50 50" keyTimes="0;0.1;0.5;0.6;1" dur="1.7" begin="0.16"
+            repeatCount="indefinite" />
+        <animateTransform href="#p9" attributeName="transform" attributeType="XML" type="rotate"
+            values="0 50 50;0 50 50;-180 50 50;-180 50 50;0 50 50" keyTimes="0;0.1;0.5;0.6;1" dur="1.7" begin="0.24"
+            repeatCount="indefinite" />
+        <animateTransform href="#p10" attributeName="transform" attributeType="XML" type="rotate"
+            values="0 50 50;0 50 50;-180 50 50;-180 50 50;0 50 50" keyTimes="0;0.1;0.5;0.6;1" dur="1.7" begin="0.32"
+            repeatCount="indefinite" />
+    </g>
+</svg>

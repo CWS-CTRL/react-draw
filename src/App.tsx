@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Exhibitions from "./views/exhibition";
+
+import svgImportControls from "./utils/svgImportControls";
+const iconsInfo = svgImportControls.batchImportLoading();
 
 const App = () => {
-  return <p className="text-red-500 text-3xl">cws-draw</p>
+  return <div className="grid grid-cols-1 place-content-center">
+    <Exhibitions iconsInfo={ iconsInfo} />
+  </div>
 };
 
 export default App;

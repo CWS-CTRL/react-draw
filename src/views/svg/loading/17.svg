@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 40 20 20">
+    <g id="l" transform="rotate(45 50 50)" fill="none" stroke="#fff" stroke-width="0.1">
+        <rect id="r1" x="46" y="46" width="4" height="4" />
+        <rect id="r2" x="50" y="46" width="4" height="4" />
+        <rect id="r3" x="50" y="50" width="4" height="4" />
+        <rect id="r4" x="46" y="50" width="4" height="4" />
+        <animateTransform href="#r1" attributeName="transform" attributeType="XML" type="translate"
+            values="0 0;2 0;2 0;4 0" keyTimes="0;0.333;0.667;1" dur="1" repeatCount="indefinite" />
+        <animateTransform href="#r2" attributeName="transform" attributeType="XML" type="translate"
+            values="0 0;2 0;2 4;0 4" keyTimes="0;0.333;0.667;1" dur="1" repeatCount="indefinite" />
+        <animateTransform href="#r3" attributeName="transform" attributeType="XML" type="translate"
+            values="0 0;-2 0;-2 0;-4 0" keyTimes="0;0.333;0.667;1" dur="1" repeatCount="indefinite" />
+        <animateTransform href="#r4" attributeName="transform" attributeType="XML" type="translate"
+            values="0 0;-2 0;-2 -4;0 -4" keyTimes="0;0.333;0.667;1" dur="1" repeatCount="indefinite" />
+    </g>
+</svg>

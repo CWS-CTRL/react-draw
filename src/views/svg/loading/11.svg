@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="35 40 30 30">
+    <g id="l" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+        <g id="frame" fill="none">
+            <path id="p1" d="M 45 45,l 5 5 5 -5" stroke-dasharray="14" />
+            <path id="p2" d="M 50 50,l-10 0 0 15 20 0 0 -15 -10 0" stroke-dasharray="70" />
+
+            <animate href="#p1" attributeType="XML" attributeName="stroke-dashoffset" values="14;7;7;0"
+                keyTimes="0;0.08;0.92;1" dur="2.4" repeatCount="1" />
+            <animate href="#p2" attributeType="XML" attributeName="stroke-dashoffset" values="70;70;0"
+                keyTimes="0;0.084;1" dur="2.2" repeatCount="1" />
+        </g>
+        <g id="c" fill="#fff">
+            <circle id="c1" cx="50" cy="58" r="1" opacity="0" />
+            <circle id="c2" cx="45" cy="58" r="1" opacity="0" />
+            <circle id="c3" cx="55" cy="58" r="1" opacity="0" />
+
+            <animate href="#c1" attributeType="XML" attributeName="opacity" values="1;0;1" dur="1" begin="2.5"
+                repeatCount="indefinite" />
+            <animate href="#c2" attributeType="XML" attributeName="opacity" values="1;0;1" dur="1" begin="2.6"
+                repeatCount="indefinite" />
+            <animate href="#c3" attributeType="XML" attributeName="opacity" values="1;0;1" dur="1" begin="2.7"
+                repeatCount="indefinite" />
+        </g>
+    </g>
+</svg>

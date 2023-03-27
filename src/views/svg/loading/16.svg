@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 42 20 20">
+    <g id="l" fill="none" stroke="#fff" stroke-width="0.1">
+        <rect id="r1" x="41" y="45" width="3" height="3" />
+        <rect id="r2" x="41" y="50" width="3" height="3" />
+        <rect id="r3" x="46" y="50" width="3" height="3" />
+        <rect id="r4" x="51" y="50" width="3" height="3" />
+        <rect id="r5" x="56" y="50" width="3" height="3" />
+        <!--0 0.083 0.167 0.25 0.333 0.417 0.5 0.583 0.667 0.75 0.833 0.917 1-->
+        <animateTransform href="#r1" attributeName="transform" attributeType="XML" type="translate"
+            values="0 0;0 5;0 5;" keyTimes="0;0.083;1" dur="3.5" repeatCount="indefinite" />
+        <animateTransform href="#r2" attributeName="transform" attributeType="XML" type="translate"
+            values="0 0;0 5;5 5;5 0;5 0;5 -5;0 -5" keyTimes="0;0.083;0.167;0.25;0.833;0.917;1" dur="3.5"
+            repeatCount="indefinite" />
+        <animateTransform href="#r3" attributeName="transform" attributeType="XML" type="translate"
+            values="0 0;0 0;0 -5;5 -5;5 0;5 0;5 5;0 5;0 0;0 0"
+            keyTimes="0;0.167;0.25;0.333;0.417;0.667;0.75;0.833;0.917;1" dur="3.5" repeatCount="indefinite" />
+        <animateTransform href="#r4" attributeName="transform" attributeType="XML" type="translate"
+            values="0 0;0 0;0 5;5 5;5 0;5 0" keyTimes="0;0.333;0.417;0.5;0.583;1" dur="3.5" repeatCount="indefinite" />
+        <animateTransform href="#r5" attributeName="transform" attributeType="XML" type="translate"
+            values="0 0;0 0;0 -5;-5 -5;-5 0;-5 0" keyTimes="0;0.5;0.583;0.667;0.75;1" dur="3.5"
+            repeatCount="indefinite" />
+    </g>
+</svg>

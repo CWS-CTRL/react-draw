@@ -1,0 +1,7 @@
+html {
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y:auto;
+  background-color: #000;
+  color: #fff;
+}

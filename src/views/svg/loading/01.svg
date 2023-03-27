@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="32 32 36 36">
+  <g id="l" stroke="#ffffff">
+    <g fill="none" stroke-width="0.4">
+      <g id="c1" stroke-dasharray="15.7">
+        <path d="M 50 55,a 5 5 0 0 1 0 -10" />
+        <path d="M 50 55,a 5 5 0 0 0 0 -10" />
+        <animate href="#c1" attributeType="XML" attributeName="stroke-dashoffset" values="0;0;8;0;8;0;0"
+          keyTimes="0;0.02;0.21;0.4;0.69;0.98;1" dur="4" repeatCount="indefinite" />
+      </g>
+      <g id="c2" stroke-dasharray="22">
+        <path d="M 50 57,a 5 5 0 0 1 0 -14" />
+        <path d="M 50 57,a 5 5 0 0 0 0 -14" />
+        <animate href="#c2" attributeType="XML" attributeName="stroke-dashoffset" values="0;0;12;0;12;0;0"
+          keyTimes="0;0.04;0.23;0.42;0.69;0.96;1" dur="4" repeatCount="indefinite" />
+      </g>
+      <g id="c3" stroke-dasharray="28.3">
+        <path d="M 50 59,a 5 5 0 0 1 0 -18" />
+        <path d="M 50 59,a 5 5 0 0 0 0 -18" />
+        <animate href="#c3" attributeType="XML" attributeName="stroke-dashoffset" values="0;0;18;0;18;0;0"
+          keyTimes="0;0.06;0.25;0.44;0.69;0.94;1" dur="4" repeatCount="indefinite" />
+      </g>
+      <g id="c4" stroke-dasharray="34.6">
+        <path d="M 50 61,a 5 5 0 0 1 0 -22" />
+        <path d="M 50 61,a 5 5 0 0 0 0 -22" />
+        <animate href="#c4" attributeType="XML" attributeName="stroke-dashoffset" values="0;0;26;0;26;0;0"
+          keyTimes="0;0.08;0.27;0.46;0.69;0.92;1" dur="4" repeatCount="indefinite" />
+      </g>
+      <g id="c5" stroke-dasharray="40.9">
+        <path d="M 50 63,a 5 5 0 0 1 0 -26" />
+        <path d="M 50 63,a 5 5 0 0 0 0 -26" />
+        <animate href="#c5" attributeType="XML" attributeName="stroke-dashoffset" values="0;0;36;0;36;0;0"
+          keyTimes="0;0.1;0.29;0.48;0.69;0.9;1" dur="4" repeatCount="indefinite" />
+      </g>
+    </g>
+    <g fill="#ffffff">
+      <circle id="c6" cx="50" cy="50" r="1" />
+      <animateTransform href="#c6" attributeType="XML" attributeName="transform" type="translate"
+        values="0 0;0 -16;0 -16;0 0" keyTimes="0;0.3;0.7;1" dur="4" repeatCount="indefinite" />
+    </g>
+  </g>
+</svg>
