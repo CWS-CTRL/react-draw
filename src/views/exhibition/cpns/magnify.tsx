@@ -22,18 +22,19 @@ const Magnify = (props: propsType) => {
     });
 
     return <div className="fixed inset-0  bg-slate-700 bg-opacity-20 z-50" onClick={({ target, currentTarget }) => target === currentTarget && setData(null)}>
-        <div className="w-3/4 h-5/6 mx-auto mt-5 p-0 sm:p-5 grid sm:grid-cos-2 md:grid-cols-2 bg-black border rounded-2xl animate-scale01">
+        <div className="w-3/4 h-5/6 m-auto mt-5 p-0 sm:p-5 grid sm:grid-cos-2 md:grid-cols-2 bg-black border rounded-2xl animate-scale01">
             <div className="mt-0 sm:mt-4">
                 <div className="text-lg font-bold">TITLE</div>
                 <div className="h-5/6 grid place-content-center border"><img src={path} alt={key} className="w-5/6 aspect-square mx-auto" /></div>
             </div>
-            <div className="overflow-auto mt-0 sm:mt-4">
+            <div className=" mt-0 sm:mt-4 overflow-hidden">
                 <div className="grid grid-cols-2 text-lg font-bold">
                     <div >CODE</div>
                     <div className="text-end cursor-pointer">
                         <CopyToClipboard text={code}>
                             <div> COPY</div>
-                        </CopyToClipboard></div>
+                        </CopyToClipboard>
+                    </div>
                 </div>
                 <div className="h-full overflow-auto">
                     {code ?
