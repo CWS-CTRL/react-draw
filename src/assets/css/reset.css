@@ -1,5 +1,6 @@
 html {
   width: 100vw;
+  min-width: 400px;
   overflow-x: hidden;
   overflow-y:auto;
   background-color: #000;
