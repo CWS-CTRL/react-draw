@@ -22,7 +22,7 @@ const Magnify = (props: propsType) => {
     });
 
     return <div className="fixed inset-0  bg-slate-700 bg-opacity-20 z-50" onClick={({ target, currentTarget }) => target === currentTarget && setData(null)}>
-        <div className="w-3/4 h-5/6 mx-auto mt-5 p-5 grid sm:grid-cos-2 md:grid-cols-2 bg-black border rounded-2xl">
+        <div className="w-3/4 h-5/6 mx-auto mt-5 p-5 grid sm:grid-cos-2 md:grid-cols-2 bg-black border rounded-2xl animate-scale01">
             <div className="mt-4">
                 <div className="text-lg font-bold">TITLE</div>
                 <div className="h-5/6 grid h- place-content-center border"><img src={path} alt={key} className="w-5/6 aspect-square mx-auto" /></div>
@@ -37,8 +37,8 @@ const Magnify = (props: propsType) => {
                 </div>
                 <div className="h-5/6 overflow-auto">
                     {code ?
-                        <pre>
-                            <code className="language-html">{code}</code>
+                        <pre className="">
+                            <code className="language-html text-sm">{code}</code>
                         </pre> :
                         <img src={codeLoading} alt="codeloading..." />
                     }

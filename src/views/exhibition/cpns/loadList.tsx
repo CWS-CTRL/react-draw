@@ -9,7 +9,7 @@ interface propsType {
 
 const LoadList = (prosp: propsType) => {
     const { iconsInfo, setData } = prosp;
-
+    
     return <div className="w-3/5 mx-auto my-5 grid grid-cols-2 gap-4 sm:w-1/2 sm:grid-cols-4 xl:grid-cols-5">{
         iconsInfo.map(({ key, path }) =>
             <div
