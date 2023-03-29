@@ -14,7 +14,7 @@
         <line id="l12" transform="rotate(330 50 50) translate(0 -17)" x1="50" y1="45" x2="50" y2="55" />
         <animate href="#l1" attributeType="XML" attributeName="stroke-opacity" values="0;1;0" dur="0.55"
             repeatCount="indefinite" />
-        <animate href="#l2" attributeType="XML" attributeName="stroke-opacity" values="0;1;0" dur="0.55" begin="0.0.5"
+        <animate href="#l2" attributeType="XML" attributeName="stroke-opacity" values="0;1;0" dur="0.55" begin="0.05"
             repeatCount="indefinite" />
         <animate href="#l3" attributeType="XML" attributeName="stroke-opacity" values="0;1;0" dur="0.55" begin="0.1"
             repeatCount="indefinite" />
