@@ -4,9 +4,9 @@ import githubSVG from "../../../assets/image/github.svg"
 
 const Reminder = () => {
     return <div className="relative h-10 mt-5 mb-10">
-  <img src={logoSVG} alt="logo" className="absolute top-5 left-1/4  w-40" />
+  <img src={logoSVG} alt="logo" className="absolute top-3 left-10 sm:left-1/6 w-44" />
   <a href="https://github.com/CWS-CTRL/svgloading" target="_blank" rel="noopener noreferrer">
-    <img src={githubSVG} alt="github" className="absolute top-7 right-1/4 w-10" />
+    <img src={githubSVG} alt="github" className="absolute top-4 right-10 sm:right-1/6 w-12" />
   </a>
 
 </div>

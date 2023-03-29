@@ -11,6 +11,10 @@ module.exports = {
       },
       animation: {
         scale01: "scale01 .5s ease-in-out",
+      },
+      spacing: {
+        "1/5": "20%",
+        "1/6": "16.67%"
       }
     },
   },
