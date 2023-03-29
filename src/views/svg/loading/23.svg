@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <g id="l" fill="#fff" stroke="#fff">
+        <g id="Pac-Man">
+            <path id="p1" d="M 30 50,a 10 10 0 0 1 20 0z" />
+            <path id="p2" d="M 30 50,a 10 10 0 0 0 20 0z" />
+            <animateTransform href="#p1" attributeName="transform" attributeType="XML" type="rotate"
+                values="0 40 50;-60 40 50;0 40 50" dur="1" repeatCount="indefinite" />
+            <animateTransform href="#p2" attributeName="transform" attributeType="XML" type="rotate"
+                values="0 40 50;60 40 50;0 40 50" dur="1" repeatCount="indefinite" />
+        </g>
+    </g>
+</svg>

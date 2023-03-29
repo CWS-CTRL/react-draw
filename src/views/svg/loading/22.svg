@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <g id="l" fill="#fff" stroke="#fff">
+        <rect id="r1" transform-origin="50 50" x="40" y="60" width="20" height="5" />
+
+
+        <animateTransform href="#r1" attributeName="transform" attributeType="XML" type="scale"
+            values="1 1;0.5 2;0.5 2;1 1" dur="1.2" repeatCount="indefinite" />
+    </g>
+
+</svg>
