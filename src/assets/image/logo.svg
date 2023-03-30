@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 30 90 30">
     <g id="logo" fill="#fff" stroke="#fff">
         <text x="10" y="50">SVGload</text>
-        <text x="79" y="50">ng</text>
-        <rect id="r1" x="76" y="42" width="2" height="8" style="" />
-        <circle id="c1" cx="77" cy="39.3" r="1" fill="#ff0000" stroke="#ff0000" />
+        <text x="78.5" y="50">ng</text>
+        <rect id="r1" x="75.5" y="42" width="2" height="8" style="" />
+        <circle id="c1" cx="76.5" cy="39.3" r="1" fill="#ff0000" stroke="#ff0000" />
         <animateTransform href="#r1" attributeName="transform" attributeType="XML" type="translate"
             values="0 0;0 -2;0 0;0 0" keyTimes="0;0.1;0.2;1" dur="1" repeatCount="indefinite" />
         <animateTransform href="#c1" attributeName="transform" attributeType="XML" type="translate"
