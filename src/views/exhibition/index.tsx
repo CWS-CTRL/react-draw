@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Reminder from "./cpns/reminder";
+import Search from "./cpns/search";
 import LoadList from "./cpns/loadList";
 import Magnify from "./cpns/magnify";
 
@@ -14,7 +15,8 @@ const Exhibitions = () => {
     const [iconDetailInfo, setIconDetailInfo] = useState<null | iconInfoType>(null);
 
     return <div>
-        <Reminder/>
+        <Reminder />
+        <Search />
         { iconsInfo.length&&<LoadList iconsInfo={iconsInfo} setData={setIconDetailInfo} />}
         {iconDetailInfo && <Magnify iconDetailInfo={iconDetailInfo!} setData={setIconDetailInfo} />}
     </div>
