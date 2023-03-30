@@ -4,11 +4,11 @@ import Reminder from "./cpns/reminder";
 import LoadList from "./cpns/loadList";
 import Magnify from "./cpns/magnify";
 
-import svgImportControls from "../../utils/svgImportControls";
+import requireSVGComponents from "../../utils/requireSVGComponents";
 
-import { iconInfoType } from "../../utils/svgImportControls";
+import { iconInfoType } from "../../utils/requireSVGComponents";
 
-const iconsInfo = svgImportControls.batchImportLoading();
+const iconsInfo = requireSVGComponents.batchImportLoading();
 
 const Exhibitions = () => {
     const [iconDetailInfo, setIconDetailInfo] = useState<null | iconInfoType>(null);

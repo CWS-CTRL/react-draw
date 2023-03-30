@@ -5,7 +5,7 @@ export interface iconInfoType {
 export type iconsInfoType = iconInfoType[];
 
 
-class SvgImportControls { 
+class RequireSVGComponents { 
     public loadingModulesInfo: iconsInfoType=[];
 
     batchImportLoading(): iconsInfoType { 
@@ -22,4 +22,4 @@ class SvgImportControls {
     }
 }
 
-export default new SvgImportControls();
+export default new RequireSVGComponents();

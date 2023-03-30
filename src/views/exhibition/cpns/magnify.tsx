@@ -4,7 +4,7 @@ import hljs from "highlight.js";
 
 import codeLoading from "../../svg/loading/19.svg";
 
-import type { iconInfoType } from "../../../utils/svgImportControls";
+import type { iconInfoType } from "../../../utils/requireSVGComponents";
 
 interface propsType {
     iconDetailInfo: iconInfoType;
