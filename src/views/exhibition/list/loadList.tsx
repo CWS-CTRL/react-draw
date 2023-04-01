@@ -16,9 +16,9 @@ const LoadList = (prosp: propsType) => {
             <div
                 className="grid place-content-center  aspect-square box-border border rounded cursor-pointer shadow-sm shadow-white"
                 key={key}
-                onClick={(e) => { setData({ key, Component,code:e.currentTarget.children[0].innerHTML }) }}
+                onClick={(e) => { setData({ key, Component }) }}
             >
-                {Component({}) }
+                {Component({})}
             </div>)
     }
     </div>

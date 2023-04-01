@@ -6,11 +6,11 @@ import type { SVGProps } from "./type";
 
 
 const MR00 = ({ options = {} }: SVGProps) => {
-    const { size = 48, color = "#ffffff", strokeWidth = 0.1, dur = 2, svgRef } = options;
+    const { size = 60, color = "#ffffff", strokeWidth = 0.1, dur = 2, svgRef } = options;
     if (svgRef) { svgRef.defaultProps = { size, color, strokeWidth, dur } }
     const getExclusiveId = setExclusiveId()
 
-    return <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="18 23 65 65" ref={svgRef}>
+    return <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="13 18 75 75" ref={svgRef}>
         <g id={getExclusiveId("bicycle")} fill="none" stroke={color}>
             <g id={getExclusiveId("whell")} strokeWidth={5 * strokeWidth}>
                 <g id={getExclusiveId("left-whell")}>

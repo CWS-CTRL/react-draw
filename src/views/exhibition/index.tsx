@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Reminder from "./header/reminder";
 import Search from "./header/search";
 import LoadList from "./list/loadList";
-import Magnify from "./cpns/magnify";
+import Magnify from "./custom/magnify";
 
 import requireSVGComponents from "../../utils/requireSVGComponents";
 

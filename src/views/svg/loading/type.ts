@@ -3,7 +3,7 @@ interface keyString {
 }
 
 export interface styleTypes extends keyString { 
-    size?: number | string;
+    size?: number;
     color?: string;
     strokeWidth?: number;
     dur?: number;
