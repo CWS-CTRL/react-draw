@@ -1,24 +1,28 @@
+import type { ReactElement } from 'react';
+import type { SVGProps } from './../views/svg/loading/type';
+
 export interface iconInfoType {
     key: string;
-    path: string;
+    Component: (props: SVGProps) => ReactElement;
+    code?:string|null
 }
 export type iconsInfoType = iconInfoType[];
 
 
 class RequireSVGComponents { 
-    public loadingModulesInfo: iconsInfoType=[];
+    public loadingComponents: iconsInfoType=[];
 
     batchImportLoading(): iconsInfoType { 
-        this.loadingModulesInfo = [];
+        this.loadingComponents = [];
         // require.context的参数不支持变量，只能写定值
-        const res = require.context("../views/svg/loading", true, /\.svg$/);
+        const res = require.context("../views/svg/loading", false, /\.tsx$/);
         res.keys().forEach(key => { 
-            this.loadingModulesInfo.push({
+            this.loadingComponents.push({
                 key,
-                path: res(key)
+                Component: res(key).default
             })
         })
-        return  this.loadingModulesInfo;
+        return  this.loadingComponents;
     }
 }
 
