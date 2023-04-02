@@ -29,6 +29,8 @@ const Magnify = (props: propsType) => {
     const getValue = (key: styleTypesKeys) => {
         return svgRef.defaultProps![key]
     };
+    //@ts-ignore
+    console.log("<h1 a=1 b=2 />".replaceAll(/(<)(\w+)\s.*\s(\/?\s*>)/g, function () { console.log(arguments) }));
 
     return <div className="fixed inset-0  bg-slate-700 bg-opacity-20 z-50" onClick={({ target, currentTarget }) => target === currentTarget && setData(null)}>
         <div className="w-3/4 h-5/6 overflow-hidden m-auto mt-5 p-0 sm:p-5 grid  md:grid-cols-2 bg-black border rounded-2xl animate-scale01">
@@ -50,7 +52,9 @@ const Magnify = (props: propsType) => {
                 {/* <div >CODE</div> */}
                 <div className="overflow-auto cursor-pointer">
                     {/* 代码展示区，高亮待开发中 */}
-                    {svgRef.current?.outerHTML}
+                    <pre>
+                        <div >{svgRef.current?.outerHTML}</div>
+                    </pre>
                 </div>
                 {/* </div> */}
             </div>
