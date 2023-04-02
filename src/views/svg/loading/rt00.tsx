@@ -21,7 +21,7 @@ const RT00 = ({ options = {} }: SVGProps) => {
             <rect x="10" y="61" width="18" height="18" rx="5" ry="5" />
             <rect x="36" y="61" width="18" height="18" rx="5" ry="5" />
             <rect x="61" y="61" width="18" height="18" rx="5" ry="5" />
-            <path id={getExclusiveId("path")} d="M 20 20,l 50 0 0 25 -50 0 0 25 50 0 0 -50 -25 0 0 50 -25 0 0 -50" strokeOpacity="0" />
+            <path id={getExclusiveId("path")} d="M 19 19,l 51 0 0 26 -51 0 0 26 51 0 0 -51 -26 0 0 51 -26 0 0 -51" strokeOpacity="0" />
             <rect id={getExclusiveId("move")} x="-9" y="-9" width="18" height="18" rx="5" ry="5" strokeOpacity="1" />
             <animateMotion href={getExclusiveId("#move")} dur={dur} rotate="auto" repeatCount="indefinite">
                 <mpath href={getExclusiveId("#path")} />

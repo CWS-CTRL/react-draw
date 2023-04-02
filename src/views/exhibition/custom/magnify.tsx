@@ -49,8 +49,8 @@ const Magnify = (props: propsType) => {
                 {/* <div className=" text-lg font-bold"> */}
                 {/* <div >CODE</div> */}
                 <div className="overflow-auto cursor-pointer">
-                    代码展示区，高亮待开发中
-                    {/* {svgRef.current?.outerHTML} */}
+                    {/* 代码展示区，高亮待开发中 */}
+                    {svgRef.current?.outerHTML}
                 </div>
                 {/* </div> */}
             </div>
