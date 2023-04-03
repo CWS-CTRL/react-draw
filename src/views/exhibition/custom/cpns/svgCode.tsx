@@ -3,7 +3,7 @@ import React, { memo, useState, useEffect } from "react";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 
-import HighlightSvg from "../../../../utils/highlightSvg";
+import { HighlightSvg } from "../../../../utils";
 
 import type { svgRefType } from "../../../svg/loading/type";
 
@@ -14,7 +14,7 @@ interface propsType {
 }
 
 const SvgCode = ({ svgRef }: propsType) => {
-    const [arr, setArr] = useState([]);
+    const [, setArr] = useState([]);
 
     //防止调整参数时频繁执行，干脆直接给与code每1.5s执行一次
     useEffect(() => {

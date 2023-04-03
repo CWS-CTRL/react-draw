@@ -3,20 +3,20 @@ import React, { useState, useEffect, useRef } from "react";
 import InputOption from "./cpns/inputOption";
 import SvgCode from "./cpns/svgCode";
 
-import downloadSVG from "../../../utils/downloadSVG";
+import { downloadSVG, getObjVal } from "../../../utils";
 import optionsValue from "./data/optionsValue";
 
-import type { iconInfoType } from "../../../utils/requireSVGComponents";
-import type { svgRefType, styleTypesKeys, optionsType } from "../../svg/loading/type";
+import type { iconInfoType } from "../../../utils/us/requireSVGComponents";
+import type { svgRefType, optionsType } from "../../svg/loading/type";
+
 
 interface propsType {
     iconDetailInfo: iconInfoType;
     setData: Function
 }
 
-
 const Magnify = (props: propsType) => {
-    const { iconDetailInfo: { key, Component, }, setData } = props;
+    const { iconDetailInfo: { Component, }, setData } = props;
 
     const svgRef: svgRefType = useRef(null)
     const [options, setOptions] = useState<optionsType>({ svgRef });
@@ -30,9 +30,7 @@ const Magnify = (props: propsType) => {
         setOptions({ ...options })
     }
 
-    const getValue = (key: styleTypesKeys) => {
-        return svgRef.defaultProps![key]
-    };
+
 
     return <div className="fixed inset-0  bg-slate-700 bg-opacity-20 z-50" onClick={({ target, currentTarget }) => target === currentTarget && setData(null)}>
         <div className="w-3/4 h-5/6 overflow-hidden m-auto mt-5 p-0 sm:p-5 grid  md:grid-cols-2 bg-black border rounded-2xl animate-scale01">
@@ -43,9 +41,9 @@ const Magnify = (props: propsType) => {
                     options: { ...Object.assign({ size: 200 }, options) }
                 })}</div>
                 <div className="w-full p-10">
-                    <div><input type="color" value={getValue("color") || "#ffffff"} onChange={({ target: { value } }) => collectOptios("color", value)} /> <span>color:{getValue("color") || "#ffffff"}</span> </div>
+                    <div><input type="color" value={getObjVal(svgRef.defaultProps!, "color") || "#ffffff"} onChange={({ target: { value } }) => collectOptios("color", value)} /> <span>color:{getObjVal(svgRef.defaultProps!, "color") || "#ffffff"}</span> </div>
                     {
-                        optionsValue.map((option, index) => <div key={index}><InputOption option={{ ...Object.assign(option, { value: getValue(option.type) }) }} setOption={collectOptios} /></div>)
+                        optionsValue.map((option, index) => <div key={index}><InputOption option={{ ...Object.assign(option, { value: getObjVal(svgRef.defaultProps!, option.type) }) }} setOption={collectOptios} /></div>)
                     }
                 </div>
             </div>

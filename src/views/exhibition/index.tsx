@@ -5,9 +5,9 @@ import Search from "./header/search";
 import LoadList from "./list/loadList";
 import Magnify from "./custom/magnify";
 
-import requireSVGComponents from "../../utils/requireSVGComponents";
+import { requireSVGComponents } from "../../utils";
 
-import { iconInfoType } from "../../utils/requireSVGComponents";
+import type { iconInfoType } from "../../utils/us/requireSVGComponents";
 
 const iconsInfo = requireSVGComponents.batchImportLoading();
 

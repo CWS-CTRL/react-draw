@@ -1,6 +1,6 @@
 import React from "react";
 
-import setExclusiveId from "../../../utils/setExclusiveId";
+import { setExclusiveId } from "../../../utils";
 
 import type { SVGProps } from "./type";
 
