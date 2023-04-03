@@ -48,11 +48,8 @@ const Magnify = (props: propsType) => {
                     }
                 </div>
             </div>
-            <div className=" mt-0 sm:mt-4 overflow-hidden opacity-0 md:opacity-100">
-                {/* <div className=" text-lg font-bold"> */}
-                {/* <div >CODE</div> */}
+            <div className=" mt-0 sm:mt-4 overflow-hidden hidden md:block">
                 <div className="scroll h-full overflow-auto cursor-pointer">
-                    {/* 代码展示区，高亮待开发中 */}
                     <pre>
                         <code className="overflow-auto" dangerouslySetInnerHTML={{ __html: new HighlightSvg(svgRef.current?.outerHTML as string).code }}></code>
                     </pre>
