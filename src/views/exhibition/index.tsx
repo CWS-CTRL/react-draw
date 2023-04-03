@@ -21,7 +21,6 @@ svgs.keys().forEach(key => {
 const Exhibitions = () => {
     const [iconDetailInfo, setIconDetailInfo] = useState<iconInfoType | null>(null);
 
-
     return <div>
         <Reminder />
         <Search />

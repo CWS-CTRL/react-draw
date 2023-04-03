@@ -1,5 +1,6 @@
 class HighlightSvg {
   public str = '';
+  public codeKey = ``;
   private tagReg = RegExp(`<.*?>`, 'g');
   private attrCountReg = RegExp(
     `.*?\\s([\\w-]+)\\s*(=)\\s*(['"][^'"]+['"])`,
@@ -10,13 +11,9 @@ class HighlightSvg {
   private deep = -1;
   public code = '';
 
-  constructor(str: string) {
-    if (!str) return;
+  highlight(str: string) {
+    if (!str) return ``;
     this.str = str;
-    this.highlight();
-  }
-
-  highlight() {
     const allHighlightRes = this.str.replaceAll(this.tagReg, (tag) => {
       const self = this;
       //获取当前深度，便于前置空格，美观
@@ -36,6 +33,8 @@ class HighlightSvg {
     });
 
     this.code = `<span class="unify">${allHighlightRes}</span>`;
+
+    return this.code;
   }
 
   //获取解析标签详细信息内容的正则
