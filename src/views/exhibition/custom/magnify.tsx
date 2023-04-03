@@ -37,7 +37,7 @@ const Magnify = (props: propsType) => {
     return <div className="fixed inset-0  bg-slate-700 bg-opacity-20 z-50" onClick={({ target, currentTarget }) => target === currentTarget && setData(null)}>
         <div className="w-3/4 h-5/6 overflow-hidden m-auto mt-5 p-0 sm:p-5 grid  md:grid-cols-2 bg-black border rounded-2xl animate-scale01">
             <div className="mt-0 sm:mt-4 md:border-r">
-                <div className="text-end text-lg"><button onClick={() => downloadSVG(svgRef.current!)}>Download</button></div>
+                <div className="mr-4 text-end text-lg"><button onClick={() => downloadSVG(svgRef.current!)}>Download</button></div>
                 <div className="h-80 grid place-content-center "
                 >{Component({
                     options: { ...Object.assign({ size: 200 }, options) }

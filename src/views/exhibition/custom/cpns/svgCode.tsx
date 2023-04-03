@@ -28,9 +28,9 @@ const SvgCode = ({ svgRef }: propsType) => {
     })
 
     return <>
-        <div className="text-end">
+        <div className="mr-4 text-end text-lg">
             <CopyToClipboard text={svgRef.current?.outerHTML}>
-                <button className="text-lg">Copy</button>
+                <button>Copy</button>
             </CopyToClipboard>
         </div>
 

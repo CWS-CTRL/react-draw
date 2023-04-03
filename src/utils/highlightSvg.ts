@@ -32,7 +32,7 @@ class HighlightSvg {
       return outerTagRes;
     });
 
-    this.code = `<span class="unify">${allHighlightRes}</span>`;
+    this.code = `<span class="unify">${allHighlightRes}</span><br/>`;
 
     return this.code;
   }
