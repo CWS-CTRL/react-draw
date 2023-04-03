@@ -1,5 +1,8 @@
 import React, { memo, useState, useEffect } from "react";
 
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+
+
 import HighlightSvg from "../../../../utils/highlightSvg";
 
 import type { svgRefType } from "../../../svg/loading/type";
@@ -24,11 +27,19 @@ const SvgCode = ({ svgRef }: propsType) => {
         }
     })
 
-    return <div className="scroll h-full overflow-auto cursor-pointer">
-        <pre>
-            <code className="overflow-auto" dangerouslySetInnerHTML={{ __html: highlightSvg.highlight(svgRef.current?.outerHTML as string) }}></code>
-        </pre>
-    </div>
+    return <>
+        <div className="text-end">
+            <CopyToClipboard text={svgRef.current?.outerHTML}>
+                <button className="text-lg">Copy</button>
+            </CopyToClipboard>
+        </div>
+
+        <div className="scroll h-full overflow-auto">
+            <pre>
+                <code className="overflow-auto" dangerouslySetInnerHTML={{ __html: highlightSvg.highlight(svgRef.current?.outerHTML as string) }}></code>
+            </pre>
+        </div>
+    </>
 }
 
 export default memo(SvgCode);
