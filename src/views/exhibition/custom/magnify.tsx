@@ -40,14 +40,14 @@ const Magnify = (props: propsType) => {
                 >{Component({
                     options: { ...Object.assign({ size: 200 }, options) }
                 })}</div>
-                <div className="w-full p-10">
+                <div className="w-full pl-10">
                     <div><input type="color" value={getObjVal(svgRef.defaultProps!, "color") || "#ffffff"} onChange={({ target: { value } }) => collectOptios("color", value)} /> <span>color:{getObjVal(svgRef.defaultProps!, "color") || "#ffffff"}</span> </div>
                     {
                         optionsValue.map((option, index) => <div key={index}><InputOption option={{ ...Object.assign(option, { value: getObjVal(svgRef.defaultProps!, option.type) }) }} setOption={collectOptios} /></div>)
                     }
                 </div>
             </div>
-            <div className=" mt-0 sm:mt-4 overflow-hidden hidden md:block">
+            <div className="mt-4 overflow-hidden hidden md:block">
                 <SvgCode svgRef={svgRef} />
             </div>
         </div>
