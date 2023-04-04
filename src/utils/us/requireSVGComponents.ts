@@ -14,7 +14,7 @@ class RequireSVGComponents {
   batchImportLoading(): iconsInfoType {
     this.loadingComponents = [];
     // require.context的参数不支持变量，只能写定值
-    const res = require.context('../../views/svg/loading', false, /\.tsx$/);
+    const res = require.context('../../views/svg/loading', true, /\.tsx$/);
     res.keys().forEach((key) => {
       this.loadingComponents.push({
         key,

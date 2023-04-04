@@ -1,17 +1,17 @@
 import React from "react";
 
-import { setExclusiveId } from "../../../utils";
+import { setExclusiveId } from "@utils/index";
 
 import type { SVGProps } from "./type";
 
 
 const RT00 = ({ options = {} }: SVGProps) => {
-    const { size = 60, color = "#ffffff", strokeWidth = 2, dur = 12, svgRef } = options;
-    if (svgRef) { svgRef.defaultProps = { size, color, strokeWidth, dur } }
+    const { size = 60, color = "#ffffff", stroke = 2, dur = 12, svgRef } = options;
+    if (svgRef) { svgRef.defaultProps = { size, color, stroke, dur } }
     const getExclusiveId = setExclusiveId()
 
     return <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90" ref={svgRef}>
-        <g id={getExclusiveId("l")} fill="none" stroke={color} strokeWidth={strokeWidth} strokeOpacity="0.3">
+        <g id={getExclusiveId("l")} fill="none" stroke={color} strokeWidth={stroke} strokeOpacity="0.3">
             <rect x="10" y="10" width="18" height="18" rx="5" ry="5" />
             <rect x="36" y="10" width="18" height="18" rx="5" ry="5" />
             <rect x="61" y="10" width="18" height="18" rx="5" ry="5" />

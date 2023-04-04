@@ -1,5 +1,5 @@
 export interface optionValueType {
-  type: 'size' | 'strokeWidth' | 'dur';
+  type: 'size' | 'stroke' | 'dur';
   value: number;
   min: number;
   max: number;
@@ -15,7 +15,7 @@ const optionsValue: optionValueType[] = [
     step: 1,
   },
   {
-    type: 'strokeWidth',
+    type: 'stroke',
     value: 1,
     min: 0.1,
     max: 5,
