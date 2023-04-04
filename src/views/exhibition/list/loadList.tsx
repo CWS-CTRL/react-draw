@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 
-import type { iconsInfoType } from "../../../utils/us/requireSVGComponents";
+import type { iconsInfoType } from "@utils/us/requireSVGComponents";
 
 interface propsType {
     iconsInfo: iconsInfoType;

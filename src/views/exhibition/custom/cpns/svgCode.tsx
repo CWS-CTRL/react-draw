@@ -3,9 +3,9 @@ import React, { memo, useState, useEffect } from "react";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 
-import { HighlightSvg } from "../../../../utils";
+import { HighlightSvg } from "@utils/index";
 
-import type { svgRefType } from "../../../svg/loading/type";
+import type { svgRefType } from "@views/svg/loading/type";
 
 const highlightSvg = new HighlightSvg();
 

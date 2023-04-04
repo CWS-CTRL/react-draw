@@ -1,6 +1,6 @@
 import React from "react";
-import logoSVG from "../../../assets/image/logo.svg"
-import githubSVG from "../../../assets/image/github.svg"
+import logoSVG from "@assets/image/logo.svg"
+import githubSVG from "@assets/image/github.svg"
 
 const Reminder = () => {
   return <div className="relative h-10 mt-5 mb-10">

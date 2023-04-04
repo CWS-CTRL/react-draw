@@ -7,7 +7,7 @@ import Magnify from "./custom/magnify";
 
 import { requireSVGComponents } from "../../utils";
 
-import type { iconInfoType } from "../../utils/us/requireSVGComponents";
+import type { iconInfoType } from "@utils/us/requireSVGComponents";
 
 const iconsInfo = requireSVGComponents.batchImportLoading();
 
