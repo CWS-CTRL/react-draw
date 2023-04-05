@@ -15,19 +15,12 @@ const iconsInfo = requireSVGComponents.batchImportLoading();
 
 
 const Exhibitions = () => {
-
-    console.log("index");
-
-    // const [iconDetailInfo, setIconDetailInfo] = useState<iconInfoType | null>(null);
-
     return <div>
         <Reminder />
         <Search />
         <Suspense fallback="">
             <div>{useRoutes(routes)}</div>
         </Suspense>
-        {/* { <LoadList iconsInfo={iconsInfo} setData={setIconDetailInfo} />}
-        { <Magnify iconDetailInfo={iconDetailInfo!} setData={setIconDetailInfo} />} */}
     </div>
 }
 

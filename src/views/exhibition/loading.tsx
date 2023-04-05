@@ -1,26 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { useAppSelector, useAppDispatch, shallowEqualApp } from "@/store";
+import { changeSearchKeyWords } from "@/store/modules/keyWords";
 import LoadList from "./list/loadList";
 import Magnify from "./custom/magnify";
-
-import { requireSVGComponents } from "@utils/index";
 
 import type { iconInfoType } from "@utils/us/requireSVGComponents";
 
 
 const Loading = () => {
-    console.log("loading");
+    const action = useAppDispatch();
+    const keyword = useParams().keyword?.trim().replaceAll(/\s+/g, " ") || "";
 
-    const { keyword } = useParams();
-    console.log(keyword);
-
-
-    const iconsInfo = requireSVGComponents.getSpecifyLoading(keyword || "all");
+    useEffect(() => {
+        action(changeSearchKeyWords(keyword))
+    });
 
     const [iconDetailInfo, setIconDetailInfo] = useState<iconInfoType | null>(null);
 
     return <div>
-        {!!iconsInfo?.length && <LoadList iconsInfo={iconsInfo} setData={setIconDetailInfo} />}
+        <LoadList keyword={keyword} setData={setIconDetailInfo} />
         {iconDetailInfo && <Magnify iconDetailInfo={iconDetailInfo!} setData={setIconDetailInfo} />}
     </div>
 }
