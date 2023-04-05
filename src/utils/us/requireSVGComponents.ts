@@ -13,7 +13,7 @@ class RequireSVGComponents {
   public loadingComponents: iconsInfoType = [];
   public keyWords: string[] = [];
   private shape = ['c', 'l', 'm', 'p', 'r'];
-  private state = ['m', 'o', 'r', 't'];
+  private state = ['d', 'm', 'o', 'r', 't'];
   private specia = ['all', 'new'];
 
   constructor() {
@@ -49,15 +49,11 @@ class RequireSVGComponents {
 
   filter() {
     const transKeyWords = this.trans();
-    const verifyKeyWord = transKeyWords.filter((keyWord) => {
-      if (keyWord.length === 2) {
-        return (
-          this.shape.includes(keyWord[0]) && this.state.includes(keyWord[1])
-        );
-      } else {
-        return this.specia.includes(keyWord);
-      }
-    });
+    const verifyKeyWord = transKeyWords.filter((keyWord) =>
+      keyWord.length === 2
+        ? this.shape.includes(keyWord[0]) && this.state.includes(keyWord[1])
+        : this.specia.includes(keyWord)
+    );
 
     return Array.from(new Set(verifyKeyWord));
   }

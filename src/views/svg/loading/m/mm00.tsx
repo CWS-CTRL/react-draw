@@ -10,7 +10,7 @@ const MM00 = ({ options = {} }: SVGProps) => {
     if (svgRef) { svgRef.defaultProps = { size, color, stroke, dur } };
     const getExclusiveId = setExclusiveId();
 
-    return <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="35 40 30 30" ref={svgRef}>
+    return <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="37 42 26 26" ref={svgRef}>
         <g id={getExclusiveId("l")} stroke={color} strokeLinecap="round" strokeLinejoin="round">
             <g id={getExclusiveId("frame")} fill="none" strokeWidth={stroke}>
                 <path id={getExclusiveId("p1")} d="M 45 45,l 5 5 5 -5" strokeDasharray="14" />

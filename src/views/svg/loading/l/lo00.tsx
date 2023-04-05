@@ -10,7 +10,7 @@ const LO00 = ({ options = {} }: SVGProps) => {
     if (svgRef) { svgRef.defaultProps = { size, color, stroke, dur } };
     const getExclusiveId = setExclusiveId();
 
-    return <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="20 20 60 60" ref={svgRef}>
+    return <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="30 30 40 40" ref={svgRef}>
         <g id={getExclusiveId("l")} fill="none" stroke={color} strokeWidth={stroke}>
             <line id={getExclusiveId("l1")} transform="rotate(0 50 50) translate(0 -15)" x1="50" y1="45" x2="50" y2="55" />
             <line id={getExclusiveId("l2")} transform="rotate(45 50 50) translate(0 -15)" x1="50" y1="45" x2="50" y2="55" />

@@ -10,7 +10,7 @@ const RT00 = ({ options = {} }: SVGProps) => {
     if (svgRef) { svgRef.defaultProps = { size, color, stroke, dur } }
     const getExclusiveId = setExclusiveId()
 
-    return <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90" ref={svgRef}>
+    return <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="5 5 80 80" ref={svgRef}>
         <g id={getExclusiveId("l")} fill="none" stroke={color} strokeWidth={stroke} strokeOpacity="0.3">
             <rect x="10" y="10" width="18" height="18" rx="5" ry="5" />
             <rect x="36" y="10" width="18" height="18" rx="5" ry="5" />

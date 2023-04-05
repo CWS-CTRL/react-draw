@@ -5,12 +5,12 @@ import { setExclusiveId } from "@utils/index";
 import type { SVGProps } from "../type";
 
 
-const CR00 = ({ options = {} }: SVGProps) => {
+const CM00 = ({ options = {} }: SVGProps) => {
     const { size = 60, color = "#ffffff", stroke = 1, dur = 1.5, svgRef } = options;
     if (svgRef) { svgRef.defaultProps = { size, color, stroke, dur } };
     const getExclusiveId = setExclusiveId();
 
-    return <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="40 40 20 20" ref={svgRef}>
+    return <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="42 42 16 16" ref={svgRef}>
         <g id={getExclusiveId("l")} fill="none" stroke={color} strokeWidth={stroke}>
             <circle id={getExclusiveId("c1")} cx="50" cy="50" r="5" strokeDasharray="1 50" strokeDashoffset="0" />
             <animateTransform href={getExclusiveId("#l")} attributeName="transform" attributeType="XML" type="rotate"
@@ -23,4 +23,4 @@ const CR00 = ({ options = {} }: SVGProps) => {
     </svg>
 }
 
-export default CR00;
+export default CM00;
