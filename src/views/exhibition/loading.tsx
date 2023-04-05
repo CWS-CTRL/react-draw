@@ -15,7 +15,7 @@ const Loading = () => {
     console.log(keyword);
 
 
-    const iconsInfo = requireSVGComponents.getSpecifyLoading(keyword || "");
+    const iconsInfo = requireSVGComponents.getSpecifyLoading(keyword || "all");
 
     const [iconDetailInfo, setIconDetailInfo] = useState<iconInfoType | null>(null);
 
