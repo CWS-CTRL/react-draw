@@ -16,6 +16,8 @@ interface propsType {
 }
 
 const Magnify = (props: propsType) => {
+    console.log("magnify");
+
     const { iconDetailInfo: { Component, }, setData } = props;
 
     const svgRef: svgRefType = useRef(null)
@@ -28,7 +30,7 @@ const Magnify = (props: propsType) => {
     const collectOptios = (key: string, val: string) => {
         options[key] = val;
         setOptions({ ...options })
-    }
+    };
 
 
 

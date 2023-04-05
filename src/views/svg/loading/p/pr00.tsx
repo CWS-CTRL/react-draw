@@ -2,7 +2,7 @@ import React from "react";
 
 import { setExclusiveId } from "@utils/index";
 
-import type { SVGProps } from "./type";
+import type { SVGProps } from "../type";
 
 
 const PR00 = ({ options = {} }: SVGProps) => {

@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
+import { useRoutes } from "react-router-dom";
+import routes from "@/router";
 
 import Reminder from "./header/reminder";
 import Search from "./header/search";
@@ -11,21 +13,21 @@ import type { iconInfoType } from "@utils/us/requireSVGComponents";
 
 const iconsInfo = requireSVGComponents.batchImportLoading();
 
-const ss: any[] = [];
-const svgs = require.context("../svg/loading", true, /\.tsx/)
-svgs.keys().forEach(key => {
-    ss.push(svgs(key).default)
-})
-
 
 const Exhibitions = () => {
-    const [iconDetailInfo, setIconDetailInfo] = useState<iconInfoType | null>(null);
+
+    console.log("index");
+
+    // const [iconDetailInfo, setIconDetailInfo] = useState<iconInfoType | null>(null);
 
     return <div>
         <Reminder />
         <Search />
-        {iconsInfo.length && <LoadList iconsInfo={iconsInfo} setData={setIconDetailInfo} />}
-        {iconDetailInfo && <Magnify iconDetailInfo={iconDetailInfo!} setData={setIconDetailInfo} />}
+        <Suspense fallback="">
+            <div>{useRoutes(routes)}</div>
+        </Suspense>
+        {/* { <LoadList iconsInfo={iconsInfo} setData={setIconDetailInfo} />}
+        { <Magnify iconDetailInfo={iconDetailInfo!} setData={setIconDetailInfo} />} */}
     </div>
 }
 
