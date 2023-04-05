@@ -17,10 +17,10 @@
 
 ## 状态
 
-|    o     |     t     |   r    |   m   |
-| :------: | :-------: | :----: | :---: |
-| opactiy  | translate | rotate | merge |
-| 不透明度 |   平移    |  旋转  | 合并  |
+|    o     |     t     |   r    |     d      |   m   |
+| :------: | :-------: | :----: | :--------: | :---: |
+| opactiy  | translate | rotate | dashoffset | merge |
+| 不透明度 |   平移    |  旋转  |    偏移    | 合并  |
 
 ## 例子
 
