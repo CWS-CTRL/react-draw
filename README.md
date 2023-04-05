@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# 搜索
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 关键字
 
-## Available Scripts
+1. 搜索的关键词使用形状加状态 如`lt`
+2. 不区分大小写
+3. 形状必需 状态非必需
+4. 多个关键词之间使用空格分开 `lt cr`
+5. 使用 `all` 将展示所有的 loading
 
-In the project directory, you can run:
+## 形状
 
-### `npm start`
+|   p   |  l   |   c    |  r   |   m   |
+| :---: | :--: | :----: | :--: | :---: |
+| point | line | circle | rect | merge |
+|  点   |  线  |   圆   | 方块 | 合并  |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 状态
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+|    o     |     t     |   r    |   m   |
+| :------: | :-------: | :----: | :---: |
+| opactiy  | translate | rotate | merge |
+| 不透明度 |   平移    |  旋转  | 合并  |
 
-### `npm test`
+## 例子
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. 不输入时展示默认设置的 loading
+2. 一 个参数只有形状时 如`l`
+   将展示所有只有线条的 loading
+3. 一 个参数有形状加状态时 如`lt`
+   将展示所有只有线条且状态只为平移的 loading
+4. 两 个参数 如`lt c`
+   将展示所有只有线条且状态只为平移加只有圆形的 loading
+5. 两 个参数 如 `lt cr`
+   将展示所有只有线条且状态只为平移加
+   只有圆形且状态只为旋转的 loading
 
-### `npm run build`
+## 特殊关键字
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. `all` 展示所有的 loading
+<!-- 2. `new` 展示最近开发的十个 loading -->
