@@ -5,7 +5,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 import { HighlightSvg } from "@utils/index";
 
-import type { svgRefType } from "@views/svg/loading/type";
+import type { svgRefType } from "@/views/svg/loading/all/type";
 
 const highlightSvg = new HighlightSvg();
 

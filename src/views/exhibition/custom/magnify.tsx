@@ -7,7 +7,7 @@ import { downloadSVG, getObjVal } from "@utils/index";
 import optionsValue from "./data/optionsValue";
 
 import type { iconInfoType } from "@utils/us/requireSVGComponents";
-import type { svgRefType, optionsType } from "@views/svg/loading/type";
+import type { svgRefType, optionsType } from "@/views/svg/loading/all/type";
 
 
 interface propsType {

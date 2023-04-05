@@ -1,5 +1,5 @@
 import type { ReactElement } from 'react';
-import type { SVGProps } from '../../views/svg/loading/type';
+import type { SVGProps } from '../../views/svg/loading/all/type';
 
 export interface iconInfoType {
   path: string;
@@ -23,7 +23,7 @@ class RequireSVGComponents {
   batchImportLoading() {
     this.loadingComponents = [];
     // require.context的参数不支持变量，只能写定值
-    const res = require.context('@views/svg/loading', true, /\.tsx$/);
+    const res = require.context('@views/svg/loading/all', true, /\.tsx$/);
     res.keys().forEach((key) => {
       this.loadingComponents.push({
         path: key,
