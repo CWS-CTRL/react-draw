@@ -6,7 +6,7 @@ import type { SVGProps } from "../type";
 
 
 const RT00 = ({ options = {} }: SVGProps) => {
-    const { size = 60, color = "#ffffff", stroke = 2, dur = 12, svgRef } = options;
+    const { size = 60, color = "#ffffff", stroke = 2, dur = 5, svgRef } = options;
     if (svgRef) { svgRef.defaultProps = { size, color, stroke, dur } }
     const getExclusiveId = setExclusiveId()
 

@@ -25,7 +25,7 @@ const optionsValue: optionValueType[] = [
     type: 'dur',
     value: 1,
     min: 0.1,
-    max: 20,
+    max: 5,
     step: 0.1,
   },
 ];

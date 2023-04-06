@@ -20,10 +20,10 @@ const MM00 = ({ options = {} }: SVGProps) => {
                 <animate href={getExclusiveId("#p2")} attributeType="XML" attributeName="stroke-dashoffset" values="70;70;0"
                     keyTimes="0;0.084;1" dur={22 * dur / 10} repeatCount="1" />
             </g>
-            <g id={getExclusiveId("c")} fill={color} strokeWidth="0.1">
-                <circle id={getExclusiveId("c1")} cx="50" cy="58" r={stroke} opacity="0" />
-                <circle id={getExclusiveId("c2")} cx="45" cy="58" r={stroke} opacity="0" />
-                <circle id={getExclusiveId("c3")} cx="55" cy="58" r={stroke} opacity="0" />
+            <g id={getExclusiveId("c")} fill={color} strokeWidth={1 * stroke / 10}>
+                <circle id={getExclusiveId("c1")} cx="50" cy="58" r="1" opacity="0" />
+                <circle id={getExclusiveId("c2")} cx="45" cy="58" r="1" opacity="0" />
+                <circle id={getExclusiveId("c3")} cx="55" cy="58" r="1" opacity="0" />
                 <animate href={getExclusiveId("#c1")} attributeType="XML" attributeName="opacity" values="1;0;1" dur={dur} begin={25 * dur / 10}
                     repeatCount="indefinite" />
                 <animate href={getExclusiveId("#c2")} attributeType="XML" attributeName="opacity" values="1;0;1" dur={dur} begin={26 * dur / 10}
