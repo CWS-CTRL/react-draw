@@ -12,7 +12,8 @@ export type iconsInfoType = iconInfoType[];
 class RequireSVGComponents {
   public loadingComponents: iconsInfoType = [];
   public keyWords: string[] = [];
-  private shape = ['c', 'l', 'm', 'p', 'r'];
+  private cache = new Map();
+  private shape = ['c', 'l', 'm', 'r'];
   private state = ['d', 'm', 'o', 'r', 't'];
   private specia = ['all', 'new'];
 
@@ -42,9 +43,15 @@ class RequireSVGComponents {
 
     this.keyWords = this.filter();
 
-    return this.loadingComponents.filter(({ type }) =>
+    const joinKeyWords = [...this.keyWords].sort().join();
+    if (this.cache.has(joinKeyWords)) return this.cache.get(joinKeyWords);
+
+    const specifyLoading = this.loadingComponents.filter(({ type }) =>
       this.keyWords.includes(type)
     );
+
+    this.cache.set(joinKeyWords, specifyLoading);
+    return specifyLoading;
   }
 
   filter() {

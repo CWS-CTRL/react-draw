@@ -8,7 +8,6 @@ const Reminder = () => {
     <a href="https://github.com/CWS-CTRL/svgloading" target="_blank" rel="noopener noreferrer">
       <img src={githubSVG} alt="github" className="absolute top-5 right-8 sm:right-32  w-12" />
     </a>
-
   </div>
 
 }
