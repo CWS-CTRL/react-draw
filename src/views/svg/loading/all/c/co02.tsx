@@ -5,7 +5,7 @@ import { setExclusiveId } from "@utils/index";
 import type { SVGProps } from "../type";
 
 
-const CR00 = ({ options = {} }: SVGProps) => {
+const Co02 = ({ options = {} }: SVGProps) => {
     const { size = 60, color = "#ffffff", stroke = 1, dur = 3, svgRef } = options;
     if (svgRef) { svgRef.defaultProps = { size, color, stroke, dur } };
     const getExclusiveId = setExclusiveId();
@@ -22,4 +22,4 @@ const CR00 = ({ options = {} }: SVGProps) => {
     </svg>
 }
 
-export default CR00;
+export default Co02;
